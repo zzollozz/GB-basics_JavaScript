@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let namber_sum = +prompt('Укажите какую сцмму зачислить Вам на счет: ');
+
+        namber_index = String(namber_sum).length;
+        namber = String(namber_sum)[namber_index - 1]
+
+        if (namber == 0 || namber >= 5) {
+            currency = 'рублей';
+        } else if (namber == 1) {
+            currency = 'рубль';
+        } else if (namber >= 2 || namber <= 4) {
+            currency = 'рубля';
+        }
+
+        alert(`Ваша сумма в ${namber_sum} ${currency} успешно зачислена.`)
+    </script>
+</body>
+
+</html>

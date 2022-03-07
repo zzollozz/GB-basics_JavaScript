@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sum_namber(a, b) {
+            return a + b;
+        }
+
+        function razn_namber(a, b) {
+            return a - b;
+        }
+
+        function delen_namber(a, b) {
+            return a / b;
+        }
+
+        function proiz_namber(a, b) {
+            return a * b;
+        }
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case '+':
+                    alert(sum_namber(arg1, arg2));
+                    break;
+                case '-':
+                    alert(razn_namber(arg1, arg2));
+                    break;
+                case '*':
+                    alert(proiz_namber(arg1, arg2));
+                    break;
+                case '/':
+                    alert(delen_namber(arg1, arg2));
+                    break;
+                default:
+                    alert('Вы не указали операцию!!!')
+            }
+        }
+
+        namber1 = +prompt('Введите первое число: ');
+        namber2 = +prompt('Введите второе число: ');
+        operation = prompt('Укажите операцию: ');
+
+        mathOperation(namber1, namber2, operation)
+
+    </script>
+</body>
+
+</html>
